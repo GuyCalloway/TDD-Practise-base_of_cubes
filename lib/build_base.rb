@@ -1,10 +1,22 @@
 class BaseBuild
-    def calc(vol)
-        return vol if vol == 1
-        if vol == 9
-            return 2
-        elsif vol > 1
-          return -1
-        end
+    
+    def initialize
+        @n = 1
+        @vol = 0
     end
+
+    def calc(vol)
+      @vol = vol
+      @n = 1
+      while (@n**3) <= @vol
+        @vol -= @n**3
+        if @vol == 0
+          return @n
+        else
+          @n += 1
+        end
+      end
+      return -1
+    end
+    
 end

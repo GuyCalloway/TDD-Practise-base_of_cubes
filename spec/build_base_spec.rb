@@ -2,6 +2,7 @@ require 'build_base.rb'
 
 describe BaseBuild do
     buildBase = BaseBuild.new
+    
     it "returns 1 cube for volume 1" do
         expect(buildBase.calc(1)).to eq(1)
     end
@@ -20,5 +21,9 @@ describe BaseBuild do
 
     it "returns -1 cube for volume 10" do
         expect(buildBase.calc(10)).to eq(-1)
+    end
+
+    it "returns 3 cube for volume 36" do
+        expect(buildBase.calc(36)).to eq(3)
     end
 end
