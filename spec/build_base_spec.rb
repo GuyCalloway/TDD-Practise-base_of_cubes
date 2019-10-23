@@ -13,4 +13,8 @@ describe BaseBuild do
     it "returns -1 cube for volume 4" do
         expect(buildBase.calc(4)).to eq(-1)
     end
+
+    it "returns -1 cube for volume 4" do
+        expect(buildBase.calc(9)).to eq(2)
+    end
 end
