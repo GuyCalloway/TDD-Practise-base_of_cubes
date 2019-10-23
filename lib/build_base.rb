@@ -1,6 +1,9 @@
 class BaseBuild
-    
     def calc(vol)
-        return 1
+        if vol == 2
+          return -1
+        else
+          return vol
+        end
     end
 end
